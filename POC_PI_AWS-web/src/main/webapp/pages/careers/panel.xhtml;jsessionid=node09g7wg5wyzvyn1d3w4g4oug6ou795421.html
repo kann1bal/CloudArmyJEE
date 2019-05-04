@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Mirrored from www.primefaces.org/apollo/panel.xhtml;jsessionid=node09g7wg5wyzvyn1d3w4g4oug6ou795421.node0 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Dec 2018 12:24:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head id="j_idt2">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+            <meta name="apple-mobile-web-app-capable" content="yes" /><link type="text/css" rel="stylesheet" href="javax.faces.resource/theme.cssb8e8.css?ln=primefaces-apollo-blue-light" /><link type="text/css" rel="stylesheet" href="javax.faces.resource/fa/font-awesome.css408e.css?ln=primefaces&amp;v=6.2" /><link type="text/css" rel="stylesheet" href="javax.faces.resource/components.css408e.css?ln=primefaces&amp;v=6.2" /><link type="text/css" rel="stylesheet" href="javax.faces.resource/inputswitch/inputswitch.css408e.css?ln=primefaces&amp;v=6.2" /><script type="text/javascript" src="javax.faces.resource/jquery/jquery.js408e.xhtml?ln=primefaces&amp;v=6.2"></script><script type="text/javascript" src="javax.faces.resource/core.js408e.xhtml?ln=primefaces&amp;v=6.2"></script><script type="text/javascript" src="javax.faces.resource/components.js408e.xhtml?ln=primefaces&amp;v=6.2"></script><script type="text/javascript" src="javax.faces.resource/inputswitch/inputswitch.js408e.xhtml?ln=primefaces&amp;v=6.2"></script><script type="text/javascript" src="javax.faces.resource/jquery/jquery-plugins.js408e.xhtml?ln=primefaces&amp;v=6.2"></script><link type="text/css" rel="stylesheet" href="javax.faces.resource/scrollpanel/scrollpanel.css408e.css?ln=primefaces&amp;v=6.2" /><script type="text/javascript" src="javax.faces.resource/scrollpanel/scrollpanel.js408e.xhtml?ln=primefaces&amp;v=6.2"></script><link type="text/css" rel="stylesheet" href="javax.faces.resource/css/nanoscroller.css73d4.css?ln=apollo-layout" /><link type="text/css" rel="stylesheet" href="javax.faces.resource/css/layout-blue-light.css73d4.css?ln=apollo-layout" /><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='en_US';}</script>
+        <title>Panels</title><script type="text/javascript" src="javax.faces.resource/js/nanoscroller.js73d4.xhtml?ln=apollo-layout"></script><script type="text/javascript" src="javax.faces.resource/js/layout.js73d4.xhtml?ln=apollo-layout"></script>
+        <style type="text/css">
+            .nba-grid {
+                width: 100%;
+                table-layout: fixed;
+                word-wrap: break-word;
+            }
+        </style></head><body>
+        
+        <div class="layout-wrapper layout-horizontal">
+
+    <div class="topbar clearfix"><img id="j_idt13" src="javax.faces.resource/images/apollo_logo.png73d4.png?ln=apollo-layout" alt="" class="logo" />
+            
+        <a id="menu-button" href="#">
+            <i class="fa fa-align-left"></i>
+        </a>
+            
+        <a href="#" class="profile">
+            <span class="username">Sarah Miller</span><img id="j_idt15" src="javax.faces.resource/images/avatar.png73d4.png?ln=apollo-layout" alt="" />
+            <i class="fa fa-angle-down"></i>
+        </a>
+        
+        <span class="topbar-search">
+            <input type="text" placeholder="Search" />
+            <span class="fa fa-search"></span>
+        </span>
+        
+        <span class="topbar-themeswitcher">
+<form id="j_idt17" name="j_idt17" method="post" action="https://www.primefaces.org/apollo/panel.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt17" value="j_idt17" />
+<div id="j_idt17:j_idt18" class="ui-inputswitch ui-widget ui-widget-content ui-corner-all"><div class="ui-inputswitch-off"><span>off</span></div><div class="ui-inputswitch-on ui-state-active"><span>on</span></div><div class="ui-inputswitch-handle ui-state-default "></div><div class="ui-helper-hidden-accessible"><input id="j_idt17:j_idt18_input" name="j_idt17:j_idt18_input" type="checkbox" onchange="PrimeFaces.ab({s:&quot;j_idt17:j_idt18&quot;,e:&quot;change&quot;,p:&quot;j_idt17:j_idt18&quot;,onco:function(xhr,status,args){setTimeout(function() {document.forms[0].submit()}, 500);}});" /></div></div><script id="j_idt17:j_idt18_s" type="text/javascript">PrimeFaces.cw("InputSwitch","widget_j_idt17_j_idt18",{id:"j_idt17:j_idt18"});</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="2292584180263577743:2536032093007237826" autocomplete="off" />
+</form>
+        </span>
+
+        <ul class="topbar-menu fadeInDown">
+            <li>
+                <a href="#">
+                    <i class="topbar-icon fa fa-fw fa-user"></i>
+                    <span class="topbar-item-name">Profile</span>
+                </a>
+                <ul>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="fa fa-fw fa-user"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="fa fa-fw fa-user-secret"></i>
+                            <span>Privacy</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="fa fa-fw fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="fa fa-fw fa-sign-out"></i>
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="topbar-icon fa fa-fw fa-cog"></i>
+                    <span class="topbar-item-name">Settings</span>
+                </a>
+                <ul>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="fa fa-fw fa-paint-brush"></i>
+                            <span>Change Theme</span>
+                            <span class="topbar-badge">1</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="fa fa-fw fa-star-o"></i>
+                            <span>Favorites</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="fa fa-fw fa-lock"></i>
+                            <span>Lock Screen</span>
+                            <span class="topbar-badge">3</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="fa fa-fw fa-picture-o"></i>
+                            <span>Wallpaper</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="topbar-icon fa fa-fw fa-envelope-o"></i>
+                    <span class="topbar-item-name">Messages</span>
+                    <span class="topbar-badge">5</span>
+                </a>
+                <ul>
+                    <li role="menuitem">
+                        <a href="#" class="topbar-message"><img id="j_idt20" src="javax.faces.resource/images/avatar1.png73d4.png?ln=apollo-layout" alt="" width="35" />
+                            <span>Give me a call</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#" class="topbar-message"><img id="j_idt22" src="javax.faces.resource/images/avatar2.png73d4.png?ln=apollo-layout" alt="" width="35" />
+                            <span>Reports attached</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#" class="topbar-message"><img id="j_idt24" src="javax.faces.resource/images/avatar3.png73d4.png?ln=apollo-layout" alt="" width="35" />
+                            <span>About your invoice</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#" class="topbar-message"><img id="j_idt26" src="javax.faces.resource/images/avatar2.png73d4.png?ln=apollo-layout" alt="" width="35" />
+                            <span>Meeting today</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#" class="topbar-message"><img id="j_idt28" src="javax.faces.resource/images/avatar4.png73d4.png?ln=apollo-layout" alt="" width="35" />
+                            <span>Out of office</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="topbar-icon fa fa-fw fa-bell-o"></i>
+                    <span class="topbar-item-name">Notifications</span>
+                    <span class="topbar-badge">2</span>
+                </a>
+                <ul>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="fa fa-fw fa-tasks"></i>
+                            <span>Pending tasks</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="fa fa-fw fa-calendar-check-o"></i>
+                            <span>Meeting today</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="fa fa-fw fa-download"></i>
+                            <span>Download</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="fa fa-fw fa-plane"></i>
+                            <span>Book flight</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="topbar-search-item">
+                <span class="topbar-search">
+                    <input type="text" placeholder="Search" />
+                    <span class="fa fa-search"></span>
+                </span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="layout-menu-container">
+        <div class="nano">
+            <div class="nano-content menu-scroll-content">
+                <div class="layout-menu-title">MENU</div>
+<form id="menuform" name="menuform" method="post" action="https://www.primefaces.org/apollo/panel.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="menuform" value="menuform" />
+<ul id="menuform:j_idt31" class="layout-menu"><li id="menuform:apl_dashboard" role="menuitem"><a href="dashboard.html"><i class="fa fa-dashboard fa-fw"></i><span>Dashboard</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dashboard</div></div></li><li id="menuform:apl_menus" role="menuitem"><a href="#"><i class="fa fa-bars fa-fw"></i><span>Menu</span><i class="layout-menuitem-toggler fa fa-fw fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Menu</div></div><ul role="menu"><li id="menuform:apl_hmenu" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:apl_hmenu':'menuform:apl_hmenu'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-arrows-v fa-fw"></i><span>Horizontal</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Horizontal</div></div></li><li id="menuform:apl_omenu" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:apl_omenu':'menuform:apl_omenu'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-arrows-h fa-fw"></i><span>Overlay</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Overlay</div></div></li><li id="menuform:apl_smenu" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:apl_smenu':'menuform:apl_smenu'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-bars fa-fw"></i><span>Static</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Static</div></div></li><li id="menuform:apl_slmenu" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:apl_slmenu':'menuform:apl_slmenu'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-window-restore fa-fw"></i><span>Slim</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Slim</div></div></li></ul></li><li id="menuform:apl_dark" role="menuitem"><a href="#"><i class="fa fa-circle fa-fw"></i><span>Dark</span><i class="layout-menuitem-toggler fa fa-fw fa-angle-down"></i><span class="menuitem-badge">8</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dark</div></div><ul role="menu"><li id="menuform:apl_dblue" role="menuitem"><a class="blue-theme" href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:apl_dblue':'menuform:apl_dblue'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-paint-brush fa-fw"></i><span>Blue</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Blue</div></div></li><li id="menuform:apl_dgreen" role="menuitem"><a class="green-theme" href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:apl_dgreen':'menuform:apl_dgreen'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-paint-brush fa-fw"></i><span>Green</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Green</div></div></li><li id="menuform:apl_dcyan" role="menuitem"><a class="cyan-theme" href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:apl_dcyan':'menuform:apl_dcyan'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-paint-brush fa-fw"></i><span>Cyan</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Cyan</div></div></li><li id="menuform:apl_dpurple" role="menuitem"><a class="purple-theme" href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:apl_dpurple':'menuform:apl_dpurple'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-paint-brush fa-fw"></i><span>Purple</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Purple</div></div></li><li id="menuform:apl_dindigo" role="menuitem"><a class="indigo-theme" href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:apl_dindigo':'menuform:apl_dindigo'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-paint-brush fa-fw"></i><span>Indigo</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Indigo</div></div></li><li id="menuform:apl_dyellow" role="menuitem"><a class="yellow-theme" href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:apl_dyellow':'menuform:apl_dyellow'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-paint-brush fa-fw"></i><span>Yellow</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Yellow</div></div></li><li id="menuform:apl_dorange" role="menuitem"><a class="orange-theme" href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:apl_dorange':'menuform:apl_dorange'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-paint-brush fa-fw"></i><span>Orange</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Orange</div></div></li><li id="menuform:apl_dpink" role="menuitem"><a class="pink-theme" href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:apl_dpink':'menuform:apl_dpink'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-paint-brush fa-fw"></i><span>Pink</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Pink</div></div></li></ul></li><li id="menuform:apl_light" role="menuitem"><a href="#"><i class="fa fa-circle-o fa-fw"></i><span>Light</span><i class="layout-menuitem-toggler fa fa-fw fa-angle-down"></i><span class="menuitem-badge">8</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Light</div></div><ul role="menu"><li id="menuform:apl_lblue" role="menuitem"><a class="blue-theme" href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:apl_lblue':'menuform:apl_lblue'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-paint-brush fa-fw"></i><span>Blue</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Blue</div></div></li><li id="menuform:apl_lgreen" role="menuitem"><a class="green-theme" href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:apl_lgreen':'menuform:apl_lgreen'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-paint-brush fa-fw"></i><span>Green</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Green</div></div></li><li id="menuform:apl_lcyan" role="menuitem"><a class="cyan-theme" href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:apl_lcyan':'menuform:apl_lcyan'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-paint-brush fa-fw"></i><span>Cyan</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Cyan</div></div></li><li id="menuform:apl_lpurple" role="menuitem"><a class="purple-theme" href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:apl_lpurple':'menuform:apl_lpurple'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-paint-brush fa-fw"></i><span>Purple</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Purple</div></div></li><li id="menuform:apl_lindigo" role="menuitem"><a class="indigo-theme" href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:apl_lindigo':'menuform:apl_lindigo'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-paint-brush fa-fw"></i><span>Indigo</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Indigo</div></div></li><li id="menuform:apl_lyellow" role="menuitem"><a class="yellow-theme" href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:apl_lyellow':'menuform:apl_lyellow'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-paint-brush fa-fw"></i><span>Yellow</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Yellow</div></div></li><li id="menuform:apl_lorange" role="menuitem"><a class="orange-theme" href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:apl_lorange':'menuform:apl_lorange'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-paint-brush fa-fw"></i><span>Orange</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Orange</div></div></li><li id="menuform:apl_lpink" role="menuitem"><a class="pink-theme" href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:apl_lpink':'menuform:apl_lpink'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-paint-brush fa-fw"></i><span>Pink</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Pink</div></div></li></ul></li><li id="menuform:apl_components" role="menuitem"><a href="#"><i class="fa fa-sitemap fa-fw"></i><span>Components</span><i class="layout-menuitem-toggler fa fa-fw fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Components</div></div><ul role="menu"><li id="menuform:apl_sample" role="menuitem"><a href="sample.html"><i class="fa fa-columns fa-fw"></i><span>Sample Page</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Sample Page</div></div></li><li id="menuform:apl_forms" role="menuitem"><a href="forms.html"><i class="fa fa-code fa-fw"></i><span>Forms</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Forms</div></div></li><li id="menuform:apl_data" role="menuitem"><a href="data.xhtml"><i class="fa fa-table fa-fw"></i><span>Data</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Data</div></div></li><li id="menuform:apl_panels" role="menuitem"><a href="panel.html"><i class="fa fa-list-alt fa-fw"></i><span>Panels</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Panels</div></div></li><li id="menuform:apl_overlays" role="menuitem"><a href="overlay.html"><i class="fa fa-square fa-fw"></i><span>Overlays</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Overlays</div></div></li><li id="menuform:apl_menucomponents" role="menuitem"><a href="menu.html"><i class="fa fa-minus-square-o fa-fw"></i><span>Menus</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Menus</div></div></li><li id="menuform:apl_messages" role="menuitem"><a href="messages.html"><i class="fa fa-circle-o-notch fa-fw"></i><span>Messages</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Messages</div></div></li><li id="menuform:apl_charts" role="menuitem"><a href="charts.html"><i class="fa fa-area-chart fa-fw"></i><span>Charts</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Charts</div></div></li><li id="menuform:apl_file" role="menuitem"><a href="file.html"><i class="fa fa-arrow-circle-o-up fa-fw"></i><span>File</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">File</div></div></li><li id="menuform:apl_misc" role="menuitem"><a href="misc.html"><i class="fa fa-user-secret fa-fw"></i><span>Misc</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Misc</div></div></li></ul></li><li id="menuform:apl_default" role="menuitem"><a href="#"><i class="fa fa-life-saver fa-fw"></i><span>Pages</span><i class="layout-menuitem-toggler fa fa-fw fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Pages</div></div><ul role="menu"><li id="menuform:apl_empty" role="menuitem"><a href="empty.html"><i class="fa fa-square-o fa-fw"></i><span>Empty Page</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Empty Page</div></div></li><li id="menuform:apl_landing" role="menuitem"><a href="landing.html"><i class="fa fa-certificate fa-fw"></i><span>Landing</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Landing</div></div></li><li id="menuform:apl_login" role="menuitem"><a href="login.html"><i class="fa fa-sign-in fa-fw"></i><span>Login Page</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Login Page</div></div></li><li id="menuform:apl_error" role="menuitem"><a href="error.html"><i class="fa fa-exclamation-circle fa-fw"></i><span>Error Page</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Error Page</div></div></li><li id="menuform:apl_404" role="menuitem"><a href="404.html"><i class="fa fa-times fa-fw"></i><span>404 Page</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">404 Page</div></div></li><li id="menuform:apl_access" role="menuitem"><a href="access.html"><i class="fa fa-exclamation-triangle fa-fw"></i><span>Access Denied Page</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Access Denied Page</div></div></li></ul></li><li id="menuform:apl_hierarchy" role="menuitem"><a href="#"><i class="fa fa-gg fa-fw"></i><span>Hierarchy</span><i class="layout-menuitem-toggler fa fa-fw fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Hierarchy</div></div><ul role="menu"><li id="menuform:apl_sm1" role="menuitem"><a href="#"><i class="fa fa-sign-in fa-fw"></i><span>Submenu 1</span><i class="layout-menuitem-toggler fa fa-fw fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Submenu 1</div></div><ul role="menu"><li id="menuform:apl_sm11" role="menuitem"><a href="#"><i class="fa fa-sign-in fa-fw"></i><span>Submenu 1.1</span><i class="layout-menuitem-toggler fa fa-fw fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Submenu 1.1</div></div><ul role="menu"><li id="menuform:apl_lnk111" role="menuitem"><a href="#"><i class="fa fa-sign-in fa-fw"></i><span>Link 1.1.1</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Link 1.1.1</div></div></li><li id="menuform:apl_lnk112" role="menuitem"><a href="#"><i class="fa fa-sign-in fa-fw"></i><span>Link 1.1.2</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Link 1.1.2</div></div></li><li id="menuform:apl_lnk113" role="menuitem"><a href="#"><i class="fa fa-sign-in fa-fw"></i><span>Link 1.1.3</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Link 1.1.3</div></div></li></ul></li><li id="menuform:apl_sm12" role="menuitem"><a href="#"><i class="fa fa-sign-in fa-fw"></i><span>Submenu 1.2</span><i class="layout-menuitem-toggler fa fa-fw fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Submenu 1.2</div></div><ul role="menu"><li id="menuform:apl_lnk121" role="menuitem"><a href="#"><i class="fa fa-sign-in fa-fw"></i><span>Link 1.2.1</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Link 1.2.1</div></div></li></ul></li></ul></li><li id="menuform:apl_sm2" role="menuitem"><a href="#"><i class="fa fa-sign-in fa-fw"></i><span>Submenu 2</span><i class="layout-menuitem-toggler fa fa-fw fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Submenu 2</div></div><ul role="menu"><li id="menuform:apl_sm21" role="menuitem"><a href="#"><i class="fa fa-sign-in fa-fw"></i><span>Submenu 2.1</span><i class="layout-menuitem-toggler fa fa-fw fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Submenu 2.1</div></div><ul role="menu"><li id="menuform:apl_lnk211" role="menuitem"><a href="#"><i class="fa fa-sign-in fa-fw"></i><span>Link 2.1.1</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Link 2.1.1</div></div></li><li id="menuform:apl_lnk212" role="menuitem"><a href="#"><i class="fa fa-sign-in fa-fw"></i><span>Link 2.1.2</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Link 2.1.2</div></div></li></ul></li><li id="menuform:apl_sm22" role="menuitem"><a href="#"><i class="fa fa-sign-in fa-fw"></i><span>Submenu 2.2</span><i class="layout-menuitem-toggler fa fa-fw fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Submenu 2.2</div></div><ul role="menu"><li id="menuform:apl_lnk221" role="menuitem"><a href="#"><i class="fa fa-sign-in fa-fw"></i><span>Link 2.2.1</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Link 2.2.1</div></div></li></ul></li></ul></li></ul></li><li id="menuform:apl_doc" role="menuitem"><a href="docs.html"><i class="fa fa-book fa-fw"></i><span>Docs</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Docs</div></div></li><li id="menuform:apl_buy" role="menuitem"><a href="https://www.primefaces.org/store"><i class="fa fa-credit-card fa-fw"></i><span>Buy</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Buy</div></div></li></ul><script id="menuform:j_idt31_s" type="text/javascript">PrimeFaces.cw("Apollo","widget_menuform_j_idt31",{id:"menuform:j_idt31"});</script>
+
+                    <div class="layout-menu-footer">
+                        <div class="layout-menu-footer-title">TASKS</div>
+
+                        <div class="layout-menu-footer-content"><div id="menuform:j_idt33" class="ui-progressbar ui-widget ui-widget-content ui-corner-all ui-progressbar-determinate"><div class="ui-progressbar-value ui-widget-header ui-corner-all" style="display:block;width:50%"></div><div class="ui-progressbar-label" style="display:block"></div></div>
+                            Today
+
+                            <div id="menuform:j_idt35" class="ui-progressbar ui-widget ui-widget-content ui-corner-all ui-progressbar-determinate"><div class="ui-progressbar-value ui-widget-header ui-corner-all" style="display:block;width:80%"></div><div class="ui-progressbar-label" style="display:block"></div></div>
+                            Overall
+                        </div>
+                    </div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:27" value="2292584180263577743:2536032093007237826" autocomplete="off" />
+</form>
+                
+                <div class="nano-scroll-footer"></div>
+            </div>
+        </div>
+    </div>
+            
+            <div class="layout-content">
+                <div class="layout-breadcrumb">
+                    <ul>
+                        <li><a href="dashboard.html" class="ui-link ui-widget"><i class="fa fa-home"></i></a></li>
+                        <li>/</li>
+        <li>Components</li>
+        <li>/</li>
+        <li><a href="panel.html" class="ui-link ui-widget">Panels</a></li>
+                    </ul>
+                    
+                    <div class="layout-breadcrumb-options">
+                        <a href="#" title="Backup">
+                            <i class="fa fa-cloud-upload"></i>
+                        </a><a href="#" title="Bookmark">
+                            <i class="fa fa-bookmark"></i>
+                        </a><a href="#" title="Logout">
+                            <i class="fa fa-sign-out"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="layout-content-container">
+        <div class="container">
+            <div class="ui-g">
+                <div class="ui-g-12 ui-lg-6">
+                    <!-- Left Side -->
+                    <div class="card no-margin">
+                        <h1>AccordionPanel</h1><div id="j_idt48" class="ui-accordion ui-widget ui-helper-reset ui-hidden-container" role="tablist" data-widget="widget_j_idt48"><div class="ui-accordion-header ui-helper-reset ui-state-default ui-state-active ui-corner-top" role="tab" aria-expanded="true" aria-selected="true" tabindex="0"><span class="ui-icon ui-icon-triangle-1-s"></span>Godfather Part I</div><div id="j_idt48:j_idt49" class="ui-accordion-content ui-helper-reset ui-widget-content" role="tabpanel" aria-hidden="false"><table cellpadding="10">
+<tbody>
+<tr>
+<td>Francis Ford Coppola's legendary continuation and sequel to his landmark 1972 film, The_Godfather, parallels the young Vito Corleone's rise with his son Michael's spiritual fall, deepening The_Godfather's depiction of the dark side of the American dream.                                         In the early 1900s, the child Vito flees his Sicilian village for America after the local Mafia kills his family. Vito struggles to make a living, legally or illegally, for his wife and growing brood in Little Italy,                                         killing the local Black Hand Fanucci after he demands his customary cut of the tyro's business. With Fanucci gone, Vito's communal stature grows.</td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" role="tab" aria-expanded="false" aria-selected="false" tabindex="0"><span class="ui-icon ui-icon-triangle-1-e"></span>Godfather Part II</div><div id="j_idt48:j_idt52" class="ui-accordion-content ui-helper-reset ui-widget-content ui-helper-hidden" role="tabpanel" aria-hidden="true"><table cellpadding="10">
+<tbody>
+<tr>
+<td>Francis Ford Coppola's legendary. Francis Ford Coppola's legendary continuation and sequel to his landmark 1972 film, The_Godfather, parallels the young Vito Corleone's rise with his son Michael's spiritual fall, deepening The_Godfather's depiction of the dark side of the American dream.                                                   In the early 1900s, the child Vito flees his Sicilian village for America after the local Mafia kills his family. Vito struggles to make a living, legally or illegally, for his wife and growing brood in Little Italy,                                                   killing the local Black Hand Fanucci after he demands his customary cut of the tyro's business. With Fanucci gone, Vito's communal stature grows.</td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" role="tab" aria-expanded="false" aria-selected="false" tabindex="0"><span class="ui-icon ui-icon-triangle-1-e"></span>Godfather Part III</div><div id="j_idt48:j_idt55" class="ui-accordion-content ui-helper-reset ui-widget-content ui-helper-hidden" role="tabpanel" aria-hidden="true"><table cellpadding="10">
+<tbody>
+<tr>
+<td>After a break of more than 15 years. Francis Ford Coppola's legendary continuation and sequel to his landmark 1972 film, The_Godfather, parallels the young Vito Corleone's rise with his son Michael's spiritual fall, deepening The_Godfather's depiction of the dark side of the American dream.                                                   In the early 1900s, the child Vito flees his Sicilian village for America after the local Mafia kills his family. Vito struggles to make a living, legally or illegally, for his wife and growing brood in Little Italy,                                                   killing the local Black Hand Fanucci after he demands his customary cut of the tyro's business. With Fanucci gone, Vito's communal stature grows.</td>
+</tr>
+</tbody>
+</table>
+</div><input type="hidden" id="j_idt48_active" name="j_idt48_active" value="0" autocomplete="off" /></div><script id="j_idt48_s" type="text/javascript">PrimeFaces.cw("AccordionPanel","widget_j_idt48",{id:"j_idt48"});</script>
+                    </div>
+                    
+                    <div class="card">
+                        <h1>Panel</h1><div id="basic" class="ui-panel ui-widget ui-widget-content ui-corner-all" style="margin-bottom:20px" data-widget="widget_basic"><div id="basic_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span class="ui-panel-title">Basic Panel</span></div><div id="basic_content" class="ui-panel-content ui-widget-content"><table cellpadding="10">
+<tbody>
+<tr>
+<td>
+                                <i class="fa fa-apple Fs60"></i></td>
+<td>CUPERTINO, California—January 27, 2015—Apple® today announced financial results for its                                     fiscal 2015 first quarter ended December 27, 2014. The Company posted record quarterly revenue of                                      $74.6 billion and record quarterly net profit of $18 billion, or $3.06 per diluted share. These results                                      compare to revenue of $57.6 billion and net profit of $13.1 billion, or $2.07 per diluted share, in the                                      year-ago quarter. Gross margin was 39.9 percent compared to 37.9 percent in the year-ago quarter.                                      International sales accounted for 65 percent of the quarter’s revenue.</td>
+</tr>
+</tbody>
+</table>
+</div><div id="basic_footer" class="ui-panel-footer ui-widget-content">Panel Footer</div></div><script id="basic_s" type="text/javascript">PrimeFaces.cw("Panel","widget_basic",{id:"basic"});</script>
+                    </div>
+                    
+                    <div class="card">
+                        <h1>TabView</h1><div id="j_idt63" class="ui-tabs ui-widget ui-widget-content ui-corner-all ui-hidden-container ui-tabs-top" style="margin-bottom:40px" data-widget="widget_j_idt63"><ul class="ui-tabs-nav ui-helper-reset ui-widget-header ui-corner-all" role="tablist"><li class="ui-tabs-header ui-state-default ui-tabs-selected ui-state-active ui-corner-top" role="tab" aria-expanded="true" aria-selected="true" data-index="0"><a href="#j_idt63:j_idt64" tabindex="-1">Godfather Part I</a></li><li class="ui-tabs-header ui-state-default ui-corner-top" role="tab" aria-expanded="false" aria-selected="false" data-index="1"><a href="#j_idt63:j_idt67" tabindex="-1">Godfather Part II</a><span class="ui-icon ui-icon-close"></span></li><li class="ui-tabs-header ui-state-default ui-corner-top" role="tab" aria-expanded="false" aria-selected="false" data-index="2"><a href="#j_idt63:j_idt70" tabindex="-1">Godfather Part III</a></li></ul><div class="ui-tabs-panels"><div id="j_idt63:j_idt64" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" data-index="0"><table cellpadding="10">
+<tbody>
+<tr>
+<td>The story begins as Don Vito Corleone. Lorem ipsum dolor sit amet, consectetur adipiscing elit.                                          Aenean blandit tortor a ipsum vehicula, in semper sapien auctor. Nulla tempor eget est non consequat. The story begins as Don Vito Corleone. Lorem ipsum dolor sit amet, consectetur adipiscing elit.                                          Aenean blandit tortor a ipsum vehicula, in semper sapien auctor. Nulla tempor eget est non consequat.</td>
+</tr>
+</tbody>
+</table>
+</div><div id="j_idt63:j_idt67" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-helper-hidden" role="tabpanel" aria-hidden="true" data-index="1"><table cellpadding="10">
+<tbody>
+<tr>
+<td>Francis Ford Coppola's legendary. Lorem ipsum dolor sit amet, consectetur adipiscing elit.                                                    Aenean blandit tortor a ipsum vehicula, in semper sapien auctor. Nulla tempor eget est non consequat.</td>
+</tr>
+</tbody>
+</table>
+</div><div id="j_idt63:j_idt70" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-helper-hidden" role="tabpanel" aria-hidden="true" data-index="2"><table cellpadding="10">
+<tbody>
+<tr>
+<td>After a break of more than 15 years. Lorem ipsum dolor sit amet, consectetur adipiscing elit.                                                   Aenean blandit tortor a ipsum vehicula, in semper sapien auctor. Nulla tempor eget est non consequat.</td>
+</tr>
+</tbody>
+</table>
+</div></div><input type="hidden" id="j_idt63_activeIndex" name="j_idt63_activeIndex" value="0" autocomplete="off" /></div><script id="j_idt63_s" type="text/javascript">PrimeFaces.cw("TabView","widget_j_idt63",{id:"j_idt63",effectDuration:"normal",scrollable:false});</script>
+                    </div>
+                    
+                    <div class="card">
+                        <h1>Toolbar</h1>
+<form id="j_idt74" name="j_idt74" method="post" action="https://www.primefaces.org/apollo/panel.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt74" value="j_idt74" />
+<div id="j_idt74:j_idt75" class="ui-toolbar ui-widget ui-widget-header ui-corner-all ui-helper-clearfix" role="toolbar"><div class="ui-toolbar-group-left"><button id="j_idt74:j_idt76" name="j_idt74:j_idt76" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left" type="button"><span class="ui-button-icon-left ui-icon ui-c fa fa-plus"></span><span class="ui-button-text ui-c">New</span></button><script id="j_idt74:j_idt76_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt74_j_idt76",{id:"j_idt74:j_idt76"});</script><button id="j_idt74:j_idt77" name="j_idt74:j_idt77" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left" type="button"><span class="ui-button-icon-left ui-icon ui-c fa fa-folder-open"></span><span class="ui-button-text ui-c">Open</span></button><script id="j_idt74:j_idt77_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt74_j_idt77",{id:"j_idt74:j_idt77"});</script>
+
+                                    <span class="ui-separator" style="padding-right: 5px;">
+                                        <span class="fa fa-ellipsis-v SoftGray"></span>
+                                    </span><button id="j_idt74:j_idt79" name="j_idt74:j_idt79" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" title="Save" type="button"><span class="ui-button-icon-left ui-icon ui-c fa fa-save"></span><span class="ui-button-text ui-c">Save</span></button><script id="j_idt74:j_idt79_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt74_j_idt79",{id:"j_idt74:j_idt79"});</script><button id="j_idt74:j_idt80" name="j_idt74:j_idt80" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" title="Delete" type="button"><span class="ui-button-icon-left ui-icon ui-c fa fa-trash"></span><span class="ui-button-text ui-c">Delete</span></button><script id="j_idt74:j_idt80_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt74_j_idt80",{id:"j_idt74:j_idt80"});</script><button id="j_idt74:j_idt81" name="j_idt74:j_idt81" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" title="Print" type="button"><span class="ui-button-icon-left ui-icon ui-c fa fa-print"></span><span class="ui-button-text ui-c">Print</span></button><script id="j_idt74:j_idt81_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt74_j_idt81",{id:"j_idt74:j_idt81"});</script></div><div class="ui-toolbar-group-right"><span id="j_idt74:j_idt82" class="ui-menubutton ui-widget"><button id="j_idt74:j_idt82_button" name="j_idt74:j_idt82_button" type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left"><span class="ui-button-icon-left ui-icon ui-c ui-icon-triangle-1-s"></span><span class="ui-button-text ui-c">Options</span></button><div id="j_idt74:j_idt82_menu" class="ui-menu ui-menu-dynamic ui-widget ui-widget-content ui-corner-all ui-helper-clearfix ui-shadow" role="menu"><ul class="ui-menu-list ui-helper-reset"><li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({s:&quot;j_idt74:j_idt83&quot;,f:&quot;j_idt74&quot;});return false;"><span class="ui-menuitem-icon ui-icon fa fa-save"></span><span class="ui-menuitem-text">Save</span></a></li><li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({s:&quot;j_idt74:j_idt84&quot;,f:&quot;j_idt74&quot;});return false;"><span class="ui-menuitem-icon ui-icon fa fa-upload"></span><span class="ui-menuitem-text">Update</span></a></li><li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({s:&quot;j_idt74:j_idt85&quot;,f:&quot;j_idt74&quot;});return false;"><span class="ui-menuitem-icon ui-icon fa fa-trash"></span><span class="ui-menuitem-text">Delete</span></a></li><li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({s:&quot;j_idt74:j_idt86&quot;,f:&quot;j_idt74&quot;});return false;"><span class="ui-menuitem-icon ui-icon fa fa-home"></span><span class="ui-menuitem-text">Homepage</span></a></li></ul></div></span><script id="j_idt74:j_idt82_s" type="text/javascript">$(function(){PrimeFaces.cw("MenuButton","widget_j_idt74_j_idt82",{id:"j_idt74:j_idt82"});});</script></div></div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:42" value="2292584180263577743:2536032093007237826" autocomplete="off" />
+</form>
+                    </div>
+                </div>
+                <div class="ui-g-12 ui-lg-6">
+                    <!-- Right Side -->
+                    <div class="card no-margin">
+                        <h1>PanelGrid Basic</h1><div id="j_idt88" class="ui-panelgrid ui-widget" style="margin-bottom:20px"><div id="j_idt88_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-g"><div class="ui-panelgrid-cell ui-g-12 ui-md-6">Name</div><div class="ui-panelgrid-cell ui-g-12 ui-md-6">Kobe Bryant</div></div><div class="ui-g"><div class="ui-panelgrid-cell ui-g-12 ui-md-6">Team</div><div class="ui-panelgrid-cell ui-g-12 ui-md-6">Los Angeles Lakers</div></div><div class="ui-g"><div class="ui-panelgrid-cell ui-g-12 ui-md-6">Position</div><div class="ui-panelgrid-cell ui-g-12 ui-md-6">Shooting Guard</div></div><div class="ui-g"><div class="ui-panelgrid-cell ui-g-12 ui-md-6">Number</div><div class="ui-panelgrid-cell ui-g-12 ui-md-6">24</div></div></div></div>
+                    </div>
+                    
+                    <div class="card">
+                        <h1>PanelGrid Grouping</h1><table id="j_idt98" class="ui-panelgrid ui-widget nba-grid" role="grid"><thead class="ui-panelgrid-header"><tr class="ui-widget-header" role="row"><td role="columnheader" class="ui-panelgrid-cell ui-widget-header" colspan="7">1995-96 NBA Playoffs</td></tr><tr class="ui-widget-header" role="row"><td role="columnheader" class="ui-panelgrid-cell ui-widget-header" colspan="2">Conf. Semifinals</td><td role="columnheader" class="ui-panelgrid-cell ui-widget-header" colspan="2">Conf. Finals</td><td role="columnheader" class="ui-panelgrid-cell ui-widget-header" colspan="2">NBA Finals</td><td role="columnheader" class="ui-panelgrid-cell ui-widget-header">Champion</td></tr></thead><tfoot class="ui-panelgrid-footer"><tr class="ui-widget-header" role="row"><td role="columnheader" class="ui-panelgrid-cell ui-widget-header" style="text-align: right" colspan="4">
+                                        Finals MVP
+                                    </td><td role="columnheader" class="ui-panelgrid-cell ui-widget-header" colspan="3" rowspan="3">
+                                        Michael Jordan (Chicago)
+                                    </td></tr><tr class="ui-widget-header" role="row"><td role="columnheader" class="ui-panelgrid-cell ui-widget-header" style="text-align: right" colspan="4">
+                                        Season MVP
+                                    </td></tr><tr class="ui-widget-header" role="row"><td role="columnheader" class="ui-panelgrid-cell ui-widget-header" style="text-align: right" colspan="4">
+                                        Top Scorer
+                                    </td></tr></tfoot><tbody><tr class="ui-widget-content ui-panelgrid-even" role="row"><td role="gridcell" class="ui-panelgrid-cell" style="font-weight: bold;">Seattle</td><td role="gridcell" class="ui-panelgrid-cell" style="font-weight: bold;">4</td><td role="gridcell" class="ui-panelgrid-cell" style="font-weight: bold;" rowspan="2">Seattle</td><td role="gridcell" class="ui-panelgrid-cell" style="font-weight: bold;" rowspan="2">4</td><td role="gridcell" class="ui-panelgrid-cell" rowspan="5">Seattle</td><td role="gridcell" class="ui-panelgrid-cell" rowspan="5">2</td><td role="gridcell" class="ui-panelgrid-cell" style="font-weight: bold;" rowspan="11">Chicago</td></tr><tr class="ui-widget-content ui-panelgrid-odd" role="row"><td role="gridcell" class="ui-panelgrid-cell">Houston</td><td role="gridcell" class="ui-panelgrid-cell">0</td></tr><tr class="ui-widget-content ui-panelgrid-even" role="row"><td role="gridcell" class="ui-panelgrid-cell ui-widget-header" colspan="4"><img id="j_idt133" height="0" alt="" src="javax.faces.resource/spacer/dot_clear.gif408e.gif?ln=primefaces&amp;v=6.2" /></td></tr><tr class="ui-widget-content ui-panelgrid-odd" role="row"><td role="gridcell" class="ui-panelgrid-cell" style="font-weight: bold;">Utah</td><td role="gridcell" class="ui-panelgrid-cell" style="font-weight: bold;">4</td><td role="gridcell" class="ui-panelgrid-cell" rowspan="2">Utah</td><td role="gridcell" class="ui-panelgrid-cell" rowspan="2">3</td></tr><tr class="ui-widget-content ui-panelgrid-even" role="row"><td role="gridcell" class="ui-panelgrid-cell">San Antonio</td><td role="gridcell" class="ui-panelgrid-cell">2</td></tr><tr class="ui-widget-content ui-panelgrid-odd" role="row"><td role="gridcell" class="ui-panelgrid-cell ui-widget-header" colspan="6"><img id="j_idt150" height="0" alt="" src="javax.faces.resource/spacer/dot_clear.gif408e.gif?ln=primefaces&amp;v=6.2" /></td></tr><tr class="ui-widget-content ui-panelgrid-even" role="row"><td role="gridcell" class="ui-panelgrid-cell" style="font-weight: bold;">Chicago</td><td role="gridcell" class="ui-panelgrid-cell" style="font-weight: bold;">4</td><td role="gridcell" class="ui-panelgrid-cell" style="font-weight: bold;" rowspan="2">Chicago</td><td role="gridcell" class="ui-panelgrid-cell" style="font-weight: bold;" rowspan="2">4</td><td role="gridcell" class="ui-panelgrid-cell" style="font-weight: bold;" rowspan="5">Chicago</td><td role="gridcell" class="ui-panelgrid-cell" style="font-weight: bold;" rowspan="5">4</td></tr><tr class="ui-widget-content ui-panelgrid-odd" role="row"><td role="gridcell" class="ui-panelgrid-cell">New York</td><td role="gridcell" class="ui-panelgrid-cell">1</td></tr><tr class="ui-widget-content ui-panelgrid-even" role="row"><td role="gridcell" class="ui-panelgrid-cell ui-widget-header" colspan="4"><img id="j_idt171" height="0" alt="" src="javax.faces.resource/spacer/dot_clear.gif408e.gif?ln=primefaces&amp;v=6.2" /></td></tr><tr class="ui-widget-content ui-panelgrid-odd" role="row"><td role="gridcell" class="ui-panelgrid-cell">Atlanta</td><td role="gridcell" class="ui-panelgrid-cell">1</td><td role="gridcell" class="ui-panelgrid-cell" rowspan="2">Orlando</td><td role="gridcell" class="ui-panelgrid-cell" rowspan="2">0</td></tr><tr class="ui-widget-content ui-panelgrid-even" role="row"><td role="gridcell" class="ui-panelgrid-cell" style="font-weight: bold;">Orlando</td><td role="gridcell" class="ui-panelgrid-cell" style="font-weight: bold;">4</td></tr></tbody></table>
+                    </div>
+                    
+                    <div class="card">
+                        <h1>Custom Scrollbars</h1><div id="j_idt198" class="ui-scrollpanel ui-widget ui-widget-content" style="height:200px; min-width:200px; width:270px !important;">
+                            <div style="padding:5px">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit tortor a ipsum vehicula, in semper sapien auctor. Nulla tempor eget est non consequat. Nulla sit amet lorem justo. Cras non tellus eros. Sed ultricies orci ut quam interdum fringilla. Nam vitae massa ac mi elementum mattis vel vitae sem. Ut eros ipsum, scelerisque a erat a, eleifend luctus nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                </p>
+                                <p>
+                                    Vivamus ac ullamcorper magna. Aenean felis ante, elementum sit amet urna at, eleifend aliquet velit. Morbi a convallis magna. In nec leo vel dolor hendrerit pharetra. Cras in iaculis enim. Aenean porta sapien dignissim turpis dapibus, eu dictum velit elementum. Aliquam sollicitudin gravida luctus.
+                                </p>
+                                <p>
+                                    Ut vel nulla sit amet erat laoreet eleifend nec sed lacus. Quisque placerat diam vitae justo eleifend, rutrum mollis mauris fringilla. Curabitur turpis odio, euismod id lorem a, ultricies suscipit ligula. Pellentesque ut erat a leo rhoncus porta ac sed velit. Nunc at erat ligula. Fusce vehicula posuere interdum. Curabitur tempus, tortor at sollicitudin dapibus, erat ante varius nisl, id dictum erat ipsum porttitor ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla id varius enim, sed rutrum orci.
+                                </p>
+                                <p>
+                                    Sed tincidunt urna quis metus lacinia commodo. Praesent convallis eros vel quam scelerisque bibendum. Mauris eget dignissim libero. Pellentesque sagittis sem quis ipsum viverra, sed consequat mi consectetur. Donec facilisis dapibus ultrices. Donec luctus auctor lacus, at congue nisi aliquet eu. Praesent in justo at risus faucibus ultricies. Fusce et libero lectus. Donec elementum pharetra sapien, at placerat purus sodales et. Vivamus iaculis lacus sed placerat rhoncus. Mauris iaculis sit amet nunc at placerat. Donec consequat euismod lacinia. Etiam nec quam vehicula, cursus massa in, ullamcorper erat.
+                                </p>
+                                <p>
+                                    Praesent volutpat scelerisque vestibulum. In eu massa non neque rutrum commodo. Nunc vel enim nisi. Aenean leo ipsum, molestie vel justo nec, pharetra luctus dui. Nunc rhoncus turpis id lorem luctus consequat. Nulla condimentum adipiscing turpis consequat semper. Etiam ullamcorper velit nec hendrerit malesuada. Praesent venenatis leo sit amet arcu commodo, sit amet porta tellus suscipit. Quisque mi tortor, vestibulum in arcu non, pretium auctor libero. In commodo luctus placerat.
+                                </p>
+                            </div></div><script id="j_idt198_s" type="text/javascript">PrimeFaces.cw("ScrollPanel","widget_j_idt198",{id:"j_idt198"});</script>
+                    </div>
+
+                    <div class="card">
+                        <h1>FieldSet</h1><fieldset id="j_idt201" class="ui-fieldset ui-widget ui-widget-content ui-corner-all ui-hidden-container ui-fieldset-toggleable" data-widget="widget_j_idt201"><legend class="ui-fieldset-legend ui-corner-all ui-state-default" role="button" tabindex="0"><span class="ui-fieldset-toggler ui-icon ui-icon-minusthick"></span>Toggleable Fieldset</legend><div class="ui-fieldset-content">Francis Ford Coppola's legendary continuation and sequel to his landmark 1972 film, The_Godfather, parallels the young Vito Corleone's rise with his son Michael's spiritual fall, deepening The_Godfather's depiction of the dark side of the American dream.                                           In the early 1900s, the child Vito flees his Sicilian village for America after the local Mafia kills his family. Vito struggles to make a living, legally or illegally, for his wife and growing brood in Little Italy,                                           killing the local Black Hand Fanucci after he demands his customary cut of the tyro's business. With Fanucci gone, Vito's communal stature grows.</div><input type="hidden" id="j_idt201_collapsed" name="j_idt201_collapsed" value="false" /></fieldset><script id="j_idt201_s" type="text/javascript">PrimeFaces.cw("Fieldset","widget_j_idt201",{id:"j_idt201",toggleable:true,collapsed:false,toggleSpeed:500});</script>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+            </div>
+    
+    <div class="layout-footer">
+        <div class="clearfix">
+            <span class="footer-text-left">PrimeFaces Apollo</span>
+            <span class="footer-text-right">All Rights Reserved</span>
+        </div>
+    </div>
+            
+            <div class="layout-mask"></div>
+        </div><div id="j_idt207" style="width:32px;height:32px;position:fixed;right:7px;bottom:7px"><div id="j_idt207_start" style="display:none">
+                <i class="ajax-status-icon fa fa-spinner fa-spin"></i></div><div id="j_idt207_complete" style="display:none"></div></div><script id="j_idt207_s" type="text/javascript">$(function(){PrimeFaces.cw("AjaxStatus","widget_j_idt207",{id:"j_idt207"});});</script></body>
+
+
+<!-- Mirrored from www.primefaces.org/apollo/panel.xhtml;jsessionid=node09g7wg5wyzvyn1d3w4g4oug6ou795421.node0 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Dec 2018 12:24:28 GMT -->
+</html>

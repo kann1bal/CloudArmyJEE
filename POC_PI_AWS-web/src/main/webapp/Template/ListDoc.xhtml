@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	template="/Template/Template.xhtml">
+<ui:define name="title" > All Documents </ui:define>
+<ui:define name="content">
+	<h:form>
+		<p:dataTable var="p" value="#{documentBean.documents}">
+			<p:column headerText="DateDoc">
+				<h:outputText value="#{p.dateDoc}" />
+			</p:column>
+			<p:column headerText="name">
+				<h:outputText value="#{p.name}" />
+			</p:column>
+			<p:column headerText="Description">
+				<h:outputText value="#{p.size}" />
+			</p:column>
+			<p:column headerText="Document">
+				<h:outputText value="#{p.imageUrl}" />
+			</p:column>
+			<p:column headerText="Project Name">
+				<h:outputText value="#{p.projectName}" />
+			</p:column>
+			<p:column headerText="Project Id">
+				<h:outputText value="#{p.projectId}" />
+			</p:column>
+				
+		</p:dataTable>
+	</h:form>
+	</ui:define>
+
+</ui:composition>

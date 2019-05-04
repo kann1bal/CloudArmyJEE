@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition  xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	template="/Template/Template.xhtml">
+
+
+<ui:define name="content">
+	<h:form>
+		<p:dataTable var="p" value="#{projectBean.projects}">
+			<p:column headerText="Title">
+				<h:outputText value="#{p.title}" />
+			</p:column>
+			
+				<p:column headerText="Description">
+				<h:outputText value="#{p.description}" />
+			</p:column>
+			
+				<p:column headerText="OutDate">
+				<h:outputText value="#{p.outDate}" />
+			</p:column>
+			<p:column headerText="ImageUrl">
+				<h:outputText value="#{p.imageUrl}" />
+			</p:column>
+			
+			<p:column headerText="Branche">
+				<h:outputText value="#{p.branche}" />
+			</p:column>
+			
+			<p:column headerText="Id">
+				<h:outputText value="#{p.id}" />
+			</p:column>
+			
+			<h:commandButton action="#{classBean.Update()}" value="Update"/>
+	
+			
+		</p:dataTable>
+	</h:form>
+</ui:define>
+
+</ui:composition>

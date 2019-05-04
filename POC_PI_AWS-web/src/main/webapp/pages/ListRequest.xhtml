@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	template="/template/templateBack.xhtml">
+	
+<ui:define name="content">
+
+<title>Requests</title>
+
+
+	<h:form>
+		<p:dataTable var="p" value="#{requestBean.requests}">
+			<p:column headerText="Name">
+				<h:outputText value="#{p.name}" />
+			</p:column>
+			<p:column headerText="Subject">
+				<h:outputText value="#{p.subject}" />
+			</p:column>
+			<p:column headerText="Id">
+				<h:outputText value="#{p.id}" />
+			</p:column>
+			<p:column headerText="ProjectId">
+				<h:outputText value="#{p.projectId}" />
+			</p:column>
+			
+			<p:column headerText="userCreate">
+				<h:outputText value="#{p.userCreate}" />
+			</p:column>
+			
+			<p:column headerText="Category">
+				<h:outputText value="#{p.category}" />
+			</p:column>
+			
+			<p:column headerText="Priority">
+				<h:outputText value="#{p.priority}" />
+			</p:column>
+			
+			<p:column headerText="Status">
+				<h:outputText value="#{p.status}" />
+			</p:column>
+			
+			<p:column headerText="Kind">
+				<h:outputText value="#{p.kind}" />
+			</p:column>
+			
+			<p:column headerText="Update Date">
+				<h:outputText value="#{p.updateDate}" />
+			</p:column>
+			
+		
+		</p:dataTable>
+	</h:form>
+	</ui:define>
+
+	
+	
+	
+	
+	</ui:composition>

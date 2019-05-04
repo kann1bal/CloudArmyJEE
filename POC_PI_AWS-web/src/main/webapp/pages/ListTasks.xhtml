@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	template="/Template/Template.xhtml">>
+<ui:define name="content">
+
+
+	<h:form>
+		<p:dataTable var="t" value="#{tasksBean.tasks}">
+			<p:column headerText="Description">
+				<h:outputText value="#{t.description}" />
+			</p:column>
+			
+			<p:column headerText="StartDate">
+				<h:outputText value="#{t.startDate}" />
+			</p:column>
+			
+			<p:column headerText="SpentTime">
+				<h:outputText value="#{t.spentTime}" />
+			</p:column>
+			
+			<p:column headerText="Deadline">
+				<h:outputText value="#{t.deadline}" />
+			</p:column>
+			<p:column headerText="Complexity">
+				<h:outputText value="#{t.complexity}" />
+			</p:column>
+			<p:column headerText="Rate">
+				<h:outputText value="#{t.rate}" />
+			</p:column>
+			<p:column headerText="Status">
+				<h:outputText value="#{t.status}" />
+			</p:column>
+			<p:column headerText="Progress">
+				<h:outputText value="#{t.progress}" />
+			</p:column>
+			<p:column headerText="Done/NotDone">
+				<h:outputText value="#{t.isDone}" />
+			</p:column>
+			<p:column headerText="Estimation">
+				<h:outputText value="#{t.estimation}" />
+			</p:column>
+			<p:column headerText="ProjectId">
+				<h:outputText value="#{p.projectId}" />
+			</p:column>
+			<p:column headerText="Id">
+				<h:outputText value="#{p.id}" />
+			</p:column>			
+		</p:dataTable>
+	</h:form>
+	</ui:define>
+</ui:composition>
