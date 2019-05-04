@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	template="/template/templateBack.xhtml">
+		
+<ui:define name="content">
+
+<title>Meetings</title>
+	
+	
+
+	<h:form>
+		<p:dataTable value="#{meetingBean.meetings}" var="meeting" >
+			<p:column headerText="Title">
+				<h:outputText value="#{meeting.title}" />
+			</p:column>
+			
+			<p:column headerText="Details">
+				<h:outputText value="#{meeting.details}" />
+			</p:column>
+			<p:column headerText="ProjectId">
+				<h:outputText value="#{meeting.projectId}" />
+			</p:column>
+			<p:column headerText="Id">
+				<h:outputText value="#{meeting.id}" />
+			</p:column>		
+			<p:column headerText="Date">
+				<h:outputText value="#{meeting.date}" />
+			</p:column>		
+			
+			
+	
+	</p:dataTable>
+</h:form>
+
+	</ui:define>
+</ui:composition>
