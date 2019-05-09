@@ -50,7 +50,7 @@ public class DocumentConsomation implements DocumentConsomationRemote{
     	List<Documentt>  lasp = new ArrayList<Documentt>();
     	Client client = ClientBuilder.newClient();
     	
-    	WebTarget web = client.target("http://localhost:6795/api/DocumentWebApi"); 
+    	WebTarget web = client.target("http://cloudfinal-env.fyvmsnjpxm.eu-west-1.elasticbeanstalk.com/api/DocumentWebApi"); 
     	
     	Response response = web.request().get();
     	
@@ -92,7 +92,7 @@ public class DocumentConsomation implements DocumentConsomationRemote{
   @Override
 	public void Create(Documentt p) {
 		Client client = ClientBuilder.newClient();
-		WebTarget target = client.target("http://localhost:6795/api/Doc");
+		WebTarget target = client.target("http://cloudfinal-env.fyvmsnjpxm.eu-west-1.elasticbeanstalk.com/api/Doc");
 		WebTarget hello =target.path("");
 		
 		Response response =hello.request().post(Entity.entity(p, MediaType.APPLICATION_JSON) );
@@ -111,7 +111,7 @@ public class DocumentConsomation implements DocumentConsomationRemote{
 	@Override
 	public void Update(Documentt p , int id) {
 		Client client = ClientBuilder.newClient();
-		WebTarget target = client.target("http://localhost:6795/api/DocUp?id="+id);
+		WebTarget target = client.target("http://cloudfinal-env.fyvmsnjpxm.eu-west-1.elasticbeanstalk.com/api/DocUp?id="+id);
 		WebTarget hello =target.path("");
 		
 		Response response =hello.request().put(Entity.entity(p, MediaType.APPLICATION_JSON) );

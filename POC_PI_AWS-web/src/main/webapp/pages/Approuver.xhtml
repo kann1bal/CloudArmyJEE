@@ -14,7 +14,7 @@
 
 
 	<h:form>
-		<p:dataTable var="p" value="#{requestBean.requests}" widgetVar="RequestTable" filteredValue="#{requestBean.filteredRequests}">
+		<p:dataTable var="p" value="#{requestBean.requestsnot}" widgetVar="RequestTable" filteredValue="#{requestBean.filteredRequests}">
 		<f:facet name="header">
             <p:outputPanel>
                 <h:outputText value="Search all fields:" />
@@ -79,17 +79,10 @@
 		<f:facet name="header">
 	<h:outputText value="Action" />	
 	</f:facet>
-				<h:commandButton action="#{requestBean.supprimer(p.requestId)}" value="Delete"/>
+				<h:commandButton action="#{requestBean.approuver(p)}" value="Accept"/>
 					
 	</p:column>	
 		
-		<p:column>
-	<f:facet name="header">
-	<h:outputText value="Action" />	
-	</f:facet>
-				<h:commandButton action="#{requestBean.modifier(p)}" value="Edit"/>
-					
-	</p:column>		
 	
 	
 	

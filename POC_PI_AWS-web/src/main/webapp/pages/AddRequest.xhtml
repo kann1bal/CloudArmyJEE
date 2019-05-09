@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	template="/Template/Template.xhtml">
+	
+
+
+<ui:define name="content">
+
+	<h:form>
+	<h:panelGrid columns="2">
+	<h:outputText class="hi" value="Name"/>
+	<h:inputText styleClass="name" value="#{requestBean.name}"/>
+	<h:outputText value="Subject"/>
+	<h:inputText value="#{requestBean.subject}"/>
+	<h:outputText value="UserCreate"/>
+	<h:inputText value="#{requestBean.userCreate}"/>
+	<h:outputText value="Date"/>
+	<h:inputText value="#{requestBean.updateDate}">  
+   <f:convertDateTime pattern="yyyy-MM-dd"/>  
+</h:inputText>
+	
+	
+	
+	<h:outputText value="Category"/>
+	<h:selectOneMenu value="#{requestBean.category}">
+		<f:selectItem itemLabel="Select the request category" itemValue=""/>
+		<f:selectItems value="#{data.category}"/>
+	</h:selectOneMenu>
+	
+	<h:outputText value="Status"/>
+	<h:selectOneMenu value="#{requestBean.status}">
+		<f:selectItem itemLabel="Select the request status" itemValue=""/>
+		<f:selectItems value="#{data.status}"/>
+	</h:selectOneMenu>
+	
+	<h:outputText value="Priority"/>
+	<h:selectOneMenu value="#{requestBean.priority}">
+		<f:selectItem itemLabel="Select the request priority" itemValue=""/>
+		<f:selectItems value="#{data.priority}"/>
+	</h:selectOneMenu>
+
+	
+	<h:commandButton action="#{requestBean.addRequest()}" value="Add Request" />
+	
+	
+	</h:panelGrid>
+	</h:form>
+	</ui:define>
+
+	</ui:composition>

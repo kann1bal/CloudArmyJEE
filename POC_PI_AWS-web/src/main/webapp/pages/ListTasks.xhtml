@@ -1,15 +1,45 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+
+<html
+	
 	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:p="http://primefaces.org/ui"
-	template="/Template/Template.xhtml">>
+	xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui">
+   
+<ui:composition template="/Template/Template.xhtml" >
 <ui:define name="content">
 
-
+   <h:head></h:head>
+<h:body>
 	<h:form>
-		<p:dataTable var="t" value="#{tasksBean.tasks}">
+		<p:dataTable  var="t" value="#{tasksBean.tasks}" rows="5" paginator="true" paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                 rowsPerPageTemplate="5,10,15" >
+                 
+                 <f:facet name="{Exporters}">
+            <div style="float:right;padding-top: 5px;">
+                <h:commandLink>
+                    <p:graphicImage name="/demo/images/excel.png" width="24"/>
+                    <p:dataExporter type="xls" target="tbl" fileName="cars" />
+                </h:commandLink>
+ 
+                <h:commandLink>
+                    <p:graphicImage name="/demo/images/pdf.png" width="24"/>
+                    <p:dataExporter type="pdf" target="tbl" fileName="cars"/>
+                </h:commandLink>
+ 
+                <h:commandLink>
+                    <p:graphicImage name="/demo/images/csv.png" width="24"/>
+                    <p:dataExporter type="csv" target="tbl" fileName="cars" />
+                </h:commandLink>
+ 
+                <h:commandLink>
+                    <p:graphicImage name="/demo/images/xml.png" width="24"/>
+                    <p:dataExporter type="xml" target="tbl" fileName="cars" />
+                </h:commandLink>
+            </div>
+        </f:facet>
 			<p:column headerText="Description">
 				<h:outputText value="#{t.description}" />
 			</p:column>
@@ -43,13 +73,33 @@
 			<p:column headerText="Estimation">
 				<h:outputText value="#{t.estimation}" />
 			</p:column>
-			<p:column headerText="ProjectId">
-				<h:outputText value="#{p.projectId}" />
-			</p:column>
-			<p:column headerText="Id">
-				<h:outputText value="#{p.id}" />
-			</p:column>			
+			<p:column>
+			<h:commandButton action="#{tasksBean.Delete(t.id)}" value="supprimer"/>	
+			</p:column>	
+			
 		</p:dataTable>
+		<h3>Export Page Data Only</h3>
+    <h:commandLink>
+        <p:graphicImage name="excel.png" />
+        <p:dataExporter type="xls" target="tbl" fileName="cars" pageOnly="true"/>
+    </h:commandLink>
+ 
+    <h:commandLink>
+        <p:graphicImage name="pdf.png" />
+        <p:dataExporter type="pdf" target="tbl" fileName="cars" pageOnly="true" />
+    </h:commandLink>
+ 
+    <h:commandLink>
+        <p:graphicImage name="/demo/images/csv.png" />
+        <p:dataExporter type="csv" target="tbl" fileName="cars" pageOnly="true" />
+    </h:commandLink>
+ 
+    <h:commandLink>
+        <p:graphicImage name="/demo/images/xml.png" />
+        <p:dataExporter type="xml" target="tbl" fileName="cars" pageOnly="true" />
+    </h:commandLink>
 	</h:form>
+</h:body>
 	</ui:define>
 </ui:composition>
+</html>

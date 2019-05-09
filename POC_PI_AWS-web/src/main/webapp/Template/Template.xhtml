@@ -60,82 +60,116 @@
 		<section class="sidebar"> <!-- Sidebar user panel -->
 		<div class="user-panel">
 			<div class="pull-left image">
-				<img src="Back/dist/img/user2-160x160.jpg" class="img-circle"
+				<img src="Back/dist/img/zzz.jpg" class="img-circle"
 					alt="User Image" />
 			</div>
 			<div class="pull-left info">
-				<p>Administrator</p>
+				<p>Med Zied</p>
 				<a href="#"><i class="fa fa-circle text-success"></i> Online</a>
 			</div>
 		</div>
 		<!-- search form -->
-		<form action="#" method="get" class="sidebar-form">
-			<div class="input-group">
-				<input type="text" name="q" class="form-control"
-					placeholder="Search..." /> <span class="input-group-btn">
-					<button type="submit" name="search" id="search-btn"
-						class="btn btn-flat">
-						<i class="fa fa-search"></i>
-					</button>
-				</span>
-			</div>
-		</form>
+		
 		<!-- /.search form --> <!-- sidebar menu: : style can be found in sidebar.less -->
-		<ul class="sidebar-menu" data-widget="tree">
-
-			<li><a href="dashboardAdmin.jsf"> <i class="fa fa-dashboard"></i><span>
-						Dashboard</span>
-			</a></li>
-			<li><a href=""> <i class="fa fa-users"></i><span>
-						Clients</span>
-
-			</a></li>
-			<li class="treeview"><a href="formulaire.jsf"> <i class="fa fa-briefcase"></i>
-					<span>Form</span> <span class="pull-right-container"> </span>
-			</a>
-				<ul class="treeview-menu">
-					<li><a href="formulaire.jsf"><i class="fa fa-circle-o"></i> Levio
-							Projects</a></li>
-					<li><a href="/Map-PI-web/template/listProjectsAffected.jsf"><i
-							class="fa fa-circle-o"></i> Other Prjects</a></li>
-
-				</ul></li>
-			<li class="treeview"><a href="#"> <i class="fa fa-users"></i>
-					<span>Client/Project Overall</span> <span
+		<ul class="sidebar-menu" data-widget="tree">		
+				<li class="treeview"><a href="#"> <i class="fa fa-edit"></i>
+					<span>Project</span> <span
 					class="pull-right-container"> <i
 						class="fa fa-angle-left pull-right"></i>
 				</span>
 			</a>
 
 				<ul class="treeview-menu">
-
-					<li><a href="/Map-PI-web/template/Overall.jsf"><i
-							class="fa fa-circle-o"></i> Organigram</a></li>
-
-				</ul></li>
-
-			<li class="treeview"><a href="#"> <i class="fa fa-edit"></i>
-					<span>Resources Management</span> <span
-					class="pull-right-container"> <i
-						class="fa fa-angle-left pull-right"></i>
-				</span>
-			</a>
-
-				<ul class="treeview-menu">
-					<li><a href="/Map-PI-web/template/listResources.jsf"> <i
-							class="fa fa-circle-o"> </i> Resources
+					<li><a href="ProjectList.jsf"> <i
+							class="fa fa-circle-o"> </i> View Projects
 					</a></li>
-					<li><a href="/Map-PI-web/template/organigramme.jsf"><i
-							class="fa fa-circle-o"> </i> Assignations Projects</a></li>
-					<li><a href="/Map-PI-web/template/calendrierPrimfaces.jsf"><i
-							class="fa fa-circle-o"> </i> Calendar Leave Requests</a></li>
-					<li><a href="/Map-PI-web/template/listLeavesRequest_Admin.jsf"><i
-							class="fa fa-circle-o"> </i> Leaves Requests</a></li>
+					<li><a href="#"><i
+							class="fa fa-circle-o"> </i> Add Prrojects </a></li>
+				</ul></li>
+				
+			
+			
+			
+			
+			<li class="treeview"><a href="#"> <i class="fa fa-briefcase"></i>
+					<span>Client</span> <span
+					class="pull-right-container"> <i
+						class="fa fa-angle-left pull-right"></i>
+				</span>
+			</a>
 
+				<ul class="treeview-menu">
+					<li><a href="UserList.jsf"> <i
+							class="fa fa-circle-o"> </i> View User
+					</a></li>
+					</ul></li>
+					
+			
+			
+			<li class="treeview"><a href="#"> <i class="fa fa-briefcase"></i>
+					<span>Document</span> <span
+					class="pull-right-container"> <i
+						class="fa fa-angle-left pull-right"></i>
+				</span>
+			</a>
+
+				<ul class="treeview-menu">
+					<li><a href="ListDoc.jsf"> <i
+							class="fa fa-circle-o"> </i> View Document
+					</a></li>
+					<li><a href="AjouteDoc.jsf"><i
+							class="fa fa-circle-o"> </i> Add Document </a></li>
+				</ul></li>
+				
+				
+				
+					<li class="treeview"><a href="#"> <i class="fa fa-users"></i>
+					<span>Tasks</span> <span
+					class="pull-right-container"> <i
+						class="fa fa-angle-left pull-right"></i>
+				</span>
+			</a>
+
+				<ul class="treeview-menu">
+					<li><a href="ListTasks.jsf"> <i
+							class="fa fa-circle-o"> </i> View Task
+					</a></li>
+					<li><a href="ajout.jsf"><i
+							class="fa fa-circle-o"> </i> Add Task  </a></li>
+				</ul></li>
+				
+				
+				
+					<li class="treeview"><a href="ListMeeting.jsf"> <i class="fa fa-briefcase"></i>
+					<span>Meetings</span> <span class="pull-right-container"> </span>
+			</a>
+				<ul class="treeview-menu">
+				<li><a href="ApprouverMeeting.jsf"><i class="fa fa-circle-o"></i> Meetings</a></li>
+					<li><a href="ListMeeting.jsf"><i class="fa fa-circle-o"></i> Approved Meetings</a></li>
+					<li><a href="AddMeeting.jsf"><i
+							class="fa fa-circle-o"></i> Add Meeting</a></li>
+							<li><a href="Chart.jsf"><i class="fa fa-circle-o"></i> Statistics</a></li>
 
 				</ul></li>
 				
-		</ul>
+				
+				
+				
+				
+					<li class="treeview"><a href="ListRequest.jsf"> <i class="fa fa-briefcase"></i>
+					<span>Requests</span> <span class="pull-right-container"> </span>
+			</a>
+				<ul class="treeview-menu">
+				<li><a href="Approuver.jsf"><i class="fa fa-circle-o"></i> 
+							Requests</a></li>
+					<li><a href="ListRequest.jsf"><i class="fa fa-circle-o"></i> 
+							Approved Requests</a></li>
+					<li><a href="AddRequest.jsf"><i
+							class="fa fa-circle-o"></i> Add Request</a></li>
+
+				</ul></li>
+				</ul>
+					
 		</section> <!-- /.sidebar --> </aside>
 
 			<ui:include src="/Template/header.xhtml" />

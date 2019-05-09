@@ -17,11 +17,16 @@ import javax.persistence.PersistenceContext;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
+import javax.ws.rs.client.Invocation;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import entities.Tasks;
+import entities.Tasks.Complexity;
+import entities.Tasks.IsDone;
+import entities.Tasks.Progress;
+import entities.Tasks.Statuss;
 
 
 
@@ -43,7 +48,7 @@ public class TasksConsomation implements TasksConsomationRemote{
 	    	List<Tasks>  lt = new ArrayList<Tasks>();
 	    	Client client = ClientBuilder.newClient();
 	    	
-	    	WebTarget web = client.target("http://localhost:6795/api/Taskss"); 
+	    	WebTarget web = client.target("http://cloudfinal-env.fyvmsnjpxm.eu-west-1.elasticbeanstalk.com/api/Taskss"); 
 	    	
 	    	Response response = web.request().get();
 	    	
@@ -86,12 +91,12 @@ public class TasksConsomation implements TasksConsomationRemote{
 	    	 t.setDeadline(deadline);
 	    	 System.out.println("test"+object.getJsonObject(i));
 
-	    	 /*t.setComplexity(Complexity.values()[Integer.parseInt(object.getJsonObject(i).getString("Complexity"))]);
-	    	 t.setRate(Float.parseFloat(object.getJsonObject(i).get("Rate").toString()));
-	    	 t.setStatus(Statuss.values()[Integer.parseInt(object.getJsonObject(i).get("Status").toString())]);
-	    	 t.setProgress(Progress.values()[Integer.parseInt(object.getJsonObject(i).get("Progress").toString())]);
+	    	 //t.setComplexity(Complexity.values()[Integer.parseInt(object.getJsonObject(i).get("complexity").toString())]);
+	    	 t.setRate(Float.parseFloat(object.getJsonObject(i).get("rate").toString()));
+	    	 t.setStatus(Statuss.values()[Integer.parseInt(object.getJsonObject(i).get("status").toString())]);
+	    	 t.setProgress(Progress.values()[Integer.parseInt(object.getJsonObject(i).get("progress").toString())]);
 	    	 t.setIsDone(IsDone.values()[Integer.parseInt(object.getJsonObject(i).get("IsDone").toString())]);
-	    	 t.setEstimation(object.getJsonObject(i).get("Estimation").toString());*/
+	    	 t.setEstimation(object.getJsonObject(i).get("estimation").toString());
 	    	 System.out.println("teeeeessst"); 
 	    	 
 	    	
@@ -107,19 +112,33 @@ public class TasksConsomation implements TasksConsomationRemote{
 	 
 	 
 	 public void Create(Tasks t) {
+		 String lien = "http://cloudfinal-env.fyvmsnjpxm.eu-west-1.elasticbeanstalk.com/api/Create";
 			Client client = ClientBuilder.newClient();
-			WebTarget target = client.target("http://localhost:6795/api/Create");
-			WebTarget hello =target.path("");
+			WebTarget target = client.target(lien);
 			
-			Response response =hello.request().post(Entity.entity(t, MediaType.APPLICATION_JSON) );
+			Entity<Tasks> jsonEntity = Entity.json(t);
+			Invocation.Builder builder = target.request();
+			Response message = builder.post(jsonEntity);
+			System.out.println("t'ajoutettt");
+
 			
+			
+			
+		}
+	 
+	 public void Delete(int id) {
+			Client client = ClientBuilder.newClient();
+			WebTarget target = client.target("http://cloudfinal-env.fyvmsnjpxm.eu-west-1.elasticbeanstalk.com/api/Taskss/"+id);
+			
+			Invocation.Builder invocationBuilder =  target.request();
+	    	Response response = invocationBuilder.delete();
+			
+			 System.out.println("LOG DELETED"+response.getStatus());	
 			String result=response.readEntity(String.class);
-			System.out.println(result);
-			System.out.println("newwwwwwwwwwwwwwwwwwwwwwwwwwwww");
-
-
-			response.close();
+			System.out.println("XXXXXXXXXXX:"+result);
 			
+			
+			System.out.println("tfas5et");
 			
 		}
 

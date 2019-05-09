@@ -8,7 +8,7 @@
 <ui:define name="title" > All Documents </ui:define>
 <ui:define name="content">
 	<h:form>
-		<p:dataTable var="p" value="#{documentBean.documents}">
+		<p:dataTable var="p" id="mydata" value="#{documentBean.documents}">
 			<p:column headerText="DateDoc">
 				<h:outputText value="#{p.dateDoc}" />
 			</p:column>
@@ -27,8 +27,25 @@
 			<p:column headerText="Project Id">
 				<h:outputText value="#{p.projectId}" />
 			</p:column>
+			
+			
+			
+			<p:column>
+			<f:facet name="header">
+			<h:outputText value="Action" />	
+			</f:facet>
+			<h:commandButton action="#{documentBean.modifier(p)}" value="Edit"/>
+			</p:column>		
+	
+	
+	
 				
 		</p:dataTable>
+		 <h:commandLink>
+                <p:graphicImage width="50" height="50" value="/Template/Icons/xls.png"  />
+                <p:dataExporter type="xls" postProcessor="#{documentBean.postProcessXLS}"
+                    target="mydata" fileName="myexcel" />
+            </h:commandLink>
 	</h:form>
 	</ui:define>
 

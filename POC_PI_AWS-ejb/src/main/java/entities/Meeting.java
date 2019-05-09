@@ -15,6 +15,18 @@ public class Meeting {
 	private String Details;
 	private int Id;
 	private int ProjectId;
+	private boolean flag;
+	
+
+	public boolean isFlag() {
+		return flag;
+	}
+
+	public void setFlag(boolean flag) {
+		this.flag = flag;
+	}
+
+	
 
 	public int getMeetingId() {
 		return MeetingId;
@@ -91,6 +103,16 @@ public class Meeting {
 	public String toString() {
 		return "Meeting [MeetingId=" + MeetingId + ", Title=" + Title + ", Date=" + Date + ", Details=" + Details
 				+ ", Id=" + Id + ", ProjectId=" + ProjectId + "]";
+	}
+
+	public Meeting(String title, java.util.Date date, String details, int id, int projectId, boolean flag) {
+		super();
+		Title = title;
+		Date = date;
+		Details = details;
+		Id = id;
+		ProjectId = projectId;
+		this.flag = flag;
 	}
 
 	

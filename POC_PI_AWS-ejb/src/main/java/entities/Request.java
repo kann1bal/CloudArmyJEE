@@ -52,7 +52,81 @@ public class Request  {
 
 	private int ProjectId;
 	private Date UpdateDate;
+	private boolean flag;
 
+
+	
+	
+	
+	public Request(String name, Category category,
+			Priority priority, Status status,
+			String subject, String userCreate, String updatedBy, int id, int projectId, Date updateDate, boolean flag) {
+		super();
+		Name = name;
+		Category = category;
+		Priority = priority;
+		Status = status;
+		Subject = subject;
+		UserCreate = userCreate;
+		UpdatedBy = updatedBy;
+		Id = id;
+		ProjectId = projectId;
+		UpdateDate = updateDate;
+		this.flag = flag;
+	}
+
+	
+	public Request(String name,Status status, boolean flag) {
+		super();
+		Name = name;
+		Status = status;
+		this.flag = flag;
+	}
+
+
+	public Request(String name, Kind kind,
+			Category category, Priority priority,
+			Status status, String subject, String userCreate, String updatedBy,
+			int id, int projectId, Date updateDate, boolean flag) {
+		super();
+		Name = name;
+		Kind = kind;
+		Category = category;
+		Priority = priority;
+		Status = status;
+		Subject = subject;
+		UserCreate = userCreate;
+		UpdatedBy = updatedBy;
+		Id = id;
+		ProjectId = projectId;
+		UpdateDate = updateDate;
+		this.flag = flag;
+	}
+
+	public Request(String name, boolean flag) {
+		super();
+		Name = name;
+		this.flag = flag;
+	}
+
+	public boolean isFlag() {
+		return flag;
+	}
+
+	public void setFlag(boolean flag) {
+		this.flag = flag;
+	}
+
+	public Request(boolean flag) {
+		super();
+		this.flag = flag;
+	}
+
+	public Request(String name,Status status) {
+		super();
+		Name = name;
+		Status = status;
+	}
 
 	public Date getUpdateDate() {
 		return UpdateDate;
@@ -156,7 +230,7 @@ public class Request  {
 
 	@Override
 	public String toString() {
-		return "Request [RequestId=" + RequestId + ", Name=" + Name + ", Kind=" + Kind + ", Category=" + Category
+		return "Request [RequestId=" + RequestId + ", Name=" + Name + ", Category=" + Category
 				+ ", Priority=" + Priority + ", Status=" + Status + ", Subject=" + Subject + ", UserCreate="
 				+ UserCreate + ", UpdatedBy=" + UpdatedBy + ", Id=" + Id + ", ProjectId=" + ProjectId + ", UpdateDate="
 				+ UpdateDate + "]";
@@ -167,9 +241,32 @@ public class Request  {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Request(int requestId, String name, entities.Request.Kind kind, entities.Request.Category category,
-			entities.Request.Priority priority, entities.Request.Status status, String subject, String userCreate,
-			String updatedBy, int id, int projectId, Date updateDate) {
+	
+
+	public Request(String name,Kind kind,
+			Category category, Priority priority,
+			Status status, String subject, String userCreate, String updatedBy,
+			int id, int projectId, Date updateDate) {
+		super();
+		Name = name;
+		Kind = kind;
+		Category = category;
+		Priority = priority;
+		Status = status;
+		Subject = subject;
+		UserCreate = userCreate;
+		UpdatedBy = updatedBy;
+		Id = id;
+		ProjectId = projectId;
+		UpdateDate = updateDate;
+	}
+
+	
+
+	public Request(int requestId, String name, Kind kind,
+			Category category, Priority priority,
+			Status status, String subject, String userCreate, String updatedBy,
+			int id, int projectId, Date updateDate) {
 		super();
 		RequestId = requestId;
 		Name = name;
@@ -185,9 +282,15 @@ public class Request  {
 		UpdateDate = updateDate;
 	}
 
-	public Request(String name, entities.Request.Kind kind, entities.Request.Category category,
-			entities.Request.Priority priority, entities.Request.Status status, String subject, String userCreate,
-			String updatedBy, int id, int projectId, Date updateDate) {
+	public Request(Status status) {
+		super();
+		Status = status;
+	}
+
+	public Request(String name, Kind kind,
+			Category category, Priority priority,
+			Status status, String subject, String userCreate, int id, int projectId,
+			Date updateDate, boolean flag) {
 		super();
 		Name = name;
 		Kind = kind;
@@ -196,10 +299,10 @@ public class Request  {
 		Status = status;
 		Subject = subject;
 		UserCreate = userCreate;
-		UpdatedBy = updatedBy;
 		Id = id;
 		ProjectId = projectId;
 		UpdateDate = updateDate;
+		this.flag = flag;
 	}
 
 	

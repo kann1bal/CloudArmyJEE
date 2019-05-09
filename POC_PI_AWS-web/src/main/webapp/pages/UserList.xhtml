@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	template="/Template/Template.xhtml">
+		
+<ui:define name="content">
+<link rel="stylesheet" href="style.css"></link>
+<title>Users</title>
+	
+	<h:form>
+		<p:dataTable var="p" value="#{userBean.users}">
+		<p:column headerText="Id">
+				<h:outputText value="#{p.id}" />
+			</p:column>
+		
+			<p:column headerText="Email">
+				<h:outputText value="#{p.email}" />
+			</p:column>
+			<p:column headerText="FirstName">
+				<h:outputText value="#{p.firstName}" />
+			</p:column>
+			
+			<p:column headerText="LastName">
+				<h:outputText value="#{p.lastName}" />
+			</p:column>
+			<p:column headerText="Status">
+				<h:outputText value="#{p.status}" />
+			</p:column>
+			
+			
+			<p:column>
+	<f:facet name="header">
+	<h:outputText value="Action" />	
+	</f:facet>
+				<h:commandButton class="sign-in" action="#{userBean.supprimer(p.id)}" value="Delete"/>
+					
+	</p:column>	
+			
+		</p:dataTable>
+		<p:panelGrid columns="2">
+    <f:facet name="header">
+        <p:graphicImage name="demo/images/misc/kobe.png" />
+    </f:facet>
+     
+    <h:outputText value="1" />
+    <h:outputText value="Admin" />
+     
+    <h:outputText value="2" />
+    <h:outputText value="Manager" />
+     
+    <h:outputText value="3" />
+    <h:outputText value="Team Leader" />
+     
+    <h:outputText value="4" />
+    <h:outputText value="Member" />
+</p:panelGrid>
+		
+		
+	</h:form>
+		
+	</ui:define>
+</ui:composition>

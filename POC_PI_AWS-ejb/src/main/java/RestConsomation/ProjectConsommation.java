@@ -46,7 +46,7 @@ public class ProjectConsommation  implements ProjectConsommationRemote
     	List<Project>  lasp = new ArrayList<Project>();
     	Client client = ClientBuilder.newClient();
     	
-    	WebTarget web = client.target("http://localhost:6795/API/Affichage"); 
+    	WebTarget web = client.target("http://cloudfinal-env.fyvmsnjpxm.eu-west-1.elasticbeanstalk.com/API/Affichage"); 
     	
     	Response response = web.request().get();
     	
@@ -117,7 +117,7 @@ return lasp;
     @Override
 	public void Add(Project p) {
 		Client client = ClientBuilder.newClient();
-		WebTarget target = client.target("http://localhost:6795/API/CreateProject");
+		WebTarget target = client.target("http://cloudfinal-env.fyvmsnjpxm.eu-west-1.elasticbeanstalk.com/API/CreateProject");
 		WebTarget hello =target.path("");
 		
 		Response response =hello.request().post(Entity.entity(p, MediaType.APPLICATION_JSON) );
@@ -133,7 +133,7 @@ return lasp;
 	@Override
 	public void Update(Project p , int id) {
 		Client client = ClientBuilder.newClient();
-		WebTarget target = client.target("http://localhost:6795/api/update?id="+id);
+		WebTarget target = client.target("http://cloudfinal-env.fyvmsnjpxm.eu-west-1.elasticbeanstalk.com/api/update?id="+id);
 		WebTarget hello =target.path("");
 		
 		Response response =hello.request().put(Entity.entity(p, MediaType.APPLICATION_JSON) );
@@ -151,7 +151,7 @@ return lasp;
 	@Override
 	public void Delete(Project p) {
 		Client client = ClientBuilder.newClient();
-		WebTarget target = client.target("http://localhost:6795/api/delete"+p.getProjectId());
+		WebTarget target = client.target("http://cloudfinal-env.fyvmsnjpxm.eu-west-1.elasticbeanstalk.com/api/delete"+p.getProjectId());
 		WebTarget hello =target.path("");
 		
 		Response response =hello.request().delete( );

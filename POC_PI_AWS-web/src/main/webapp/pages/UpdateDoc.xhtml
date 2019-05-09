@@ -1,16 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:p="http://primefaces.org/ui">
-<body>
+	xmlns:p="http://primefaces.org/ui"
+	template="/Template/Template.xhtml">
 
+<ui:define name="title" > All Documents </ui:define>
+<ui:define name="content">
 <h:form id="form"> 
 <h:panelGrid columns="2">
-<h:outputText value="Document Name" />
-<h:inputText value="#{documentBean.documentId}" />
-
 <h:outputText value="Document Name" />
 <h:inputText value="#{documentBean.name}" />
 
@@ -25,9 +24,8 @@
 
 
 
-<h:commandButton action="#{documentBean.doUpDocument()}" value="Ajouter Document" />
+<h:commandButton action="#{documentBean.doUpDocument(documentBean.documentId)}" value="Update Document" />
 </h:panelGrid>
 </h:form>
-</body>
-</html>
-
+</ui:define>
+</ui:composition>

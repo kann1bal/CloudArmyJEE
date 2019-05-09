@@ -30,11 +30,11 @@
 				<div class="group">
 				
 					<label for="user" class="label">Username</label>
-					<h:inputText id="user" value="#{Identity.email}" type="text" class="input"/>
+					<input id="user" value="#{Identity.email}" type="text" class="input"></input>
 				</div>
 				<div class="group">
 					<label for="pass" class="label">Password</label>
-					<h:inputText  id="pass" type="password" value="#{Identity.password}" class="input" data-type="password"/>
+					<input id="pass" type="password" value="#{Identity.password}" class="input" data-type="password"></input>
 				</div>
 				<div class="group">
 					<input id="check" type="checkbox" class="check" ></input>
@@ -56,16 +56,19 @@
 			<h:form method="post">
 				<div class="group">
 					<label for="user" class="label">Username</label>
-					<h:inputText id="user"  value="#{userBean.firstName}" type="text" class="input"/>
+					<input id="user"  value="#{userBean.firstName}" type="text" class="input"></input>
 				</div>
 				<div class="group">
 					<label for="pass" class="label">Password</label>
-					<h:inputText id="pass" value="#{userBean.password}" type="password" class="input" data-type="password"/>
+					<input id="pass" value="#{userBean.password}" type="password" class="input" data-type="password"></input>
 				</div>
-				
+				<div class="group">
+					<label for="pass" class="label">Repeat Password</label>
+					<input id="pass" value="#{userBean.password}" type="password" class="input" data-type="password"></input>
+				</div>
 				<div class="group">
 					<label for="pass" class="label">Email Address</label>
-					<h:inputText id="email" type="text" value="#{userBean.email}" class="input" data-type="Email"/>
+					<input id="pass" type="text" value="#{userBean.email}" class="input" data-type="Email"></input>
 				</div>
 				<div class="group">
 				

@@ -13,7 +13,7 @@
 	
 
 	<h:form>
-		<p:dataTable value="#{meetingBean.meetings}" var="meeting" widgetVar="MeetingTable" filteredValue="#{meetingBean.filteredMeetings}" >
+		<p:dataTable value="#{meetingBean.meetingsnot}" var="meeting" widgetVar="MeetingTable" filteredValue="#{meetingBean.filteredMeetings}" >
 		
 		<f:facet name="header">
             <p:outputPanel>
@@ -38,20 +38,13 @@
 			<p:column headerText="Date">
 				<h:outputText value="#{meeting.date}" />
 			</p:column>		
-			
-		<p:column>
-		
-	<f:facet name="header">
-	<h:outputText value="Action" />	
-	</f:facet>
-				<h:commandButton action="#{meetingBean.supprimer(meeting.meetingId)}" value="Delete"/>
-	</p:column>
+	
 	
 	<p:column>
 	<f:facet name="header">
 	<h:outputText value="Action" />	
 	</f:facet>
-				<h:commandButton action="#{meetingBean.modifier(meeting)}" value="Edit"/>
+				<h:commandButton action="#{meetingBean.approuver(meeting)}" value="Accept"/>
 					
 	</p:column>
 	

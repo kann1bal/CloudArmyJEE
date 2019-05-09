@@ -24,6 +24,14 @@ public class Tasks {
 	private int ProjectId;
 	
 	
+	public Tasks(String description, Date startDate, Date deadline, Complexity complexity, String estimation) {
+		super();
+		Description = description;
+		this.startDate = startDate;
+		this.deadline = deadline;
+		this.complexity = complexity;
+		this.estimation = estimation;
+	}
 	public int getTaskId() {
 		return taskId;
 	}
